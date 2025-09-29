@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/bootstrap.css" />
+    <title>Taramasoandro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/logo.png" />
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+  </head>
+  <body class="container">
+    <!--navbar-->
+    <div class="container">
+      <nav
+        class="navbar navbar-expand-lg navbar-light container fixed-top"
+        id="mainNavbar"
+      >
+        <script>
+          window.addEventListener("scroll", function () {
+            const navbar = document.getElementById("mainNavbar");
+            if (window.scrollY > 0) {
+              navbar.style.backgroundColor = "backdrop-filter: blur(30px);";
+              navbar.style.transition = "background-color 0.3s";
+            } else {
+              navbar.style.backgroundColor = "";
+            }
+          });
+        </script>
+        <!--scrolling nav change color--->
+
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo.png" alt="" class="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Production</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">A propos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--navbar-->
+
+    <main class="container">
+      <img src="img/design.png" class="design" />
+    </main>
+    <!--bg img-->
+
+    <section class="container section1">
+      <img src="img/bg-img.png" class="bg-image" />
+      <div class="balbal text-center">
+        <h1 class="soratra">Nos farines</h1>
+        <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card" style="width: 16rem; margin: 0 50px">
+                <div class="cardCotCot">
+                  <img
+                  src="img/farine.png"
+                  class="card-img-top img-fluid
+                  alt="Card image 1"
+                />
+                <p>7.000 Ar /kg</p>
+                </div>
+                <div class="bande"></div>
+                <h3 style="font-weight: lighter;">Farine de Patate douce à chair orange</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 16rem; margin: 0 50px">
+                <div class="cardCotCot">
+                  <img
+                  src="img/farine.png"
+                  class="card-img-top img-fluid"
+                  alt="Card image 1"
+                />
+                <p>7.000 Ar /kg</p>
+                </div>
+                <div class="bande"></div>
+                <h1 class="display-6">Farine de Manioc</h1>
+                
+              </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 16rem; margin: 0 50px">
+                <div class="cardCotCot">
+                  <img
+                  src="img/farine.png"
+                  class="card-img-top img-fluid"
+                  alt="Card image 1"
+                />
+                <p>7.000 Ar /kg</p>
+                </div>
+                <div class="bande"></div>
+                <h1 class="display-6">Farine de Banane</h1>
+              </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev ;"
+            type="button"
+            data-bs-target="#cardCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" style="padding: 20px"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#cardCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="lieu" style="position: absolute;top: 70% ; text-align: center;">
+        <h1 class=" display-6" style="font-weight: lighter; color: aliceblue;">
+          Lieu de recuperation : Anosizato Jovena<br />
+          Livraison possible pour les commandes de plus de 5kg
+        </h1>
+      </div>
+    </section>
+    <section class="section2 container" style="position: relative;">
+      <img src="img/bg.png" class="bg-image" style="margin-top: -15rem;" alt="background-image">
+      <p style="position: absolute; top: 40%; right: 20%; font-style: italic; font-size: larger;">Page Facebook: <a href="https://www.facebook.com/profile.php?id=61580992426627" target="_blank">Coopérative Taramasoandro</a><br>Email : <a target="_blank" href="email">coper.taramasoandro@gmail.com</a></p>
+
+    </section>
+    <div class="footer">
+      <img src="img/Plan de travail 1.png" style="width: 300px; height: auto;">
+      <div class="float-left">
+        <p>Antananrivo, Madagascar, 101</p>
+        <p>coper.taramasoandro@gmail.com</p>
+        <p>034 98 731 59</p>
+        <p>Producteur de farine sans gluten</p>
+        <p  >© 2024 Copyright: Coopérative Taramasoandro</p>
+      </div>
+      
+
+      
+    </div>
+    <script src="dist/js/bootstrap.bundle.js"></script>
+    <script src="dist/js/bootstrap.js"></script>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
