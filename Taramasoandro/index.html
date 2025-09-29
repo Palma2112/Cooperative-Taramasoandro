@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coopérative Taramasoandro</title>
+    <link rel="favicon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dist/css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav
+        class="navbar navbar-expand-lg navbar-light container fixed-top"
+        id="mainNavbar"
+      >
+        <script>
+          window.addEventListener("scroll", function () {
+            const navbar = document.getElementById("mainNavbar");
+            if (window.scrollY > 0) {
+              navbar.style.backgroundColor = "white";
+              navbar.style.transition = "background-color 0.3s";
+            } else {
+              navbar.style.backgroundColor = "";
+            }
+          });
+        </script>
+        <!--scrolling nav change color--->
+
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo.png " alt="" class="logo img-fluid"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Production</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">A propos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--navbar-->
+
+    <main class="container">
+      <img src="img/design.png" class="design design1 img-fluid" />
+    </main>
+    <!--main-->
+
+    <section class="container text-center">
+      <img src="img/bg-img.png" alt="bg-img" class="design img-fluid" />
+      <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card" style=" width: 10rem;; margin: 0 50px">
+                <div class="cardCotCot">
+                  <img 
+                  src="img/farine.png" style="width: 90px; height: auto;"
+                  class="card-img-top img-fluid "
+                  alt="Card image 1"
+                />
+                <p>18.000 Ar /kg</p>
+                </div>
+                <div class="bande"></div>
+                <h3 style="font-weight: lighter;">Farine de Patate douce à chair orange</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style=" width: 10rem;; margin: 0 50px">
+                <div class="cardCotCot">
+                  <img style="width: 90px; height: auto;"
+                  src="img/farine.png"
+                  class="card-img-top img-fluid "
+                  alt="Card image 1"
+                />
+                <p>7.000 Ar /kg</p>
+                </div>
+                <div class="bande"></div>
+                <h3 style="font-weight: lighter;">Farine de banane</h3>
+              </div>
+            </div>
+
+
+            <button
+            class="carousel-control-prev ;"
+            type="button"
+            data-bs-target="#cardCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" style="padding: 20px"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#cardCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </section>
+    <!--section-->
+    <section class="section2 container w-100 d-flex align-items-center justify-content-center flex-column">
+        <div class="box flex justify-content-center">
+            <p style="color: white;">Appelez le 034 98 731 69</p>
+        </div>
+        <div class="box box2">
+            <p style="color: white;">Profil facebook : <a href="">Coopérative Taramsoandro</a></p>
+            <p style="color: white;">Email : <a href="email">coper.taramasoandro@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p class="text-center" style="font-size: 14px; padding: 20px 0;">Copyright © 2025 Coopérative Taramasoandro. All rights reserved.</p>
+    </footer>
+
+   
+    <script src="dist/js/bootstrap.bundle.js"></script>
+    <script src="dist/js/bootstrap.js"></script>
+    <script src="jquery.js"></script>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
