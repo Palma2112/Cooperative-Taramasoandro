@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 @media (max-width:700px){
     .background-image {
     background-image: url("img/bg-image.jpg");
@@ -16,7 +21,7 @@
     footer{
         height: 100px;
         width: 100%;
-        background-color: black;
+        background-color: #023e8a;
     }
     footer p{
         color: white;
@@ -29,6 +34,10 @@
     .social-media{
         width: 100%;
         
+    }
+    .logoTaramasoandro{
+        height: 70px;
+        width: auto;
     }
     
 }
@@ -51,7 +60,7 @@
     footer{
         height: 100px;
         width: 100%;
-        background-color: black;
+        background-color: #264653;
     }
     .icons{
         width: 30px;
