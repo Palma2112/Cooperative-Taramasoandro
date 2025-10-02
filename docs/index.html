@@ -8,41 +8,63 @@
     />
     <link rel="stylesheet" href="dist/css/bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Coopérative Taramsoandro</title>
+    <title>Coopérative Taramasoandro</title>
     <script src="jquery.js"></script>
     <script src="dist/js/bootstrap.js"></script>
     <script src="script.js"></script>
+    <link rel="icon" href="img/logo-soleil.gif">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+    </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <!-- Just an image -->
-      <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          <img
-            src="img/taramasoandro.png"
-            width="auto"
-            height="80"
-            alt="logo"
-          />
-        </a>
-      </nav>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
+    <div class="alert alert-warning alert-dismissible fade show" style="margin: 0;z-index: 99;position: sticky;top: 0;" role="alert">
+      <strong>Bienvenue !</strong> Commandez dès maintenant.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <nav
+    class="navbar navbar-expand-lg navbar-light"
+      id="mainNavbar"
+      style="
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        background: rgba(255, 255, 255, 0.944);
+        backdrop-filter: blur(10px);
+      "
+    >
+    <nav class="navbar">
+      <a class="navbar-brand " href="#">
+        <img
+        src="img/taramasoandro.png"
+        width="auto"
+        height="100"
+        alt="logo"
+        class="logoTaramasoandro"
+        
+        />
+      </a>
+    </nav>
+    
+    <button
+    class="navbar-toggler "
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    >
+    <span class="navbar-toggler-icon "></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
+            >Acceuil <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
@@ -50,38 +72,39 @@
           </li>
           <li class="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
             >
-              Contact
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a
-                class="dropdown-item"
-                href="https://www.facebook.com/profile.php?id=61580992426627"
-                target="_blank"
-                >Facebook</a
-              >
-              <a class="dropdown-item" href="#">Instagram</a>
-              <a class="dropdown-item" href="#">Tiktok</a>
-              <a
-                class="dropdown-item"
-                href="mailto:coper.taramasoandro@gmail.com"
-                >Email</a
+            Contact
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a
+            class="dropdown-item"
+            href="https://www.facebook.com/profile.php?id=61580992426627"
+            target="_blank"
+            >Facebook</a
+            >
+            <a class="dropdown-item" href="#">Instagram</a>
+            <a class="dropdown-item" href="#">Tiktok</a>
+            <a
+            class="dropdown-item"
+            href="mailto:coper.taramasoandro@gmail.com"
+            >Email</a
               >
             </div>
           </li>
         </ul>
       </div>
     </nav>
-
+    
+    
     <!---Heading--->
-
+    
     <div
       id="carouselExampleSlidesOnly"
       class="carousel slide"
@@ -89,19 +112,18 @@
     >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/bg-image.jpg" class="d-block w-100" alt="..." />
+          <img src="img/bg-image.jpg" class="d-block w-100 img-fluid" alt="..." />
         </div>
         <div class="carousel-item">
-          <img src="img/mofo.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="img/farineillustre.jpg" class="d-block w-100" alt="..." />
+          <img src="img/mofo.jpg" class="d-block w-100 img-fluid" alt="..." />
         </div>
       </div>
     </div>
     <figure>
       <blockquote class="blockquote tex-center">
-        <p>« La farine saine qui nourrit autrement ».</p>
+        <h1 style="font-family: 'Josefin Sans', sans-serif">
+          « La farine saine qui nourrit autrement ».
+        </p>
       </blockquote>
       <figcaption class="blockquote-footer">
         <cite title="Source Title">Coopérative Taramasoandro </cite>
@@ -116,7 +138,7 @@
               <img
                 src="img/farine de maïs.png"
                 class="card-img-top container"
-                alt="..."
+                alt="prod"
               />
               <div class="card-body">
                 <h5 class="card-title">Farine de maïs</h5>
@@ -126,7 +148,8 @@
                   produits alimentaires, tels que les tortillas, les tamales et
                   les pains de maïs.
                 </p>
-                <a href="#" class="btn btn-primary">10.000Ar/kg</a>
+                <a href="#prod" class="btn btn-info">10.000Ar/kg</a>
+                <span class="badge badge-success">Certifié consomable</span>
               </div>
             </div>
           </div>
@@ -145,7 +168,8 @@
                   nombreux produits alimentaires, tels que les gâteaux, les
                   biscuits, les smoothies et les crêpes.
                 </p>
-                <a href="#" class="btn btn-primary">20.000Ar/kg</a>
+                <a href="#prod" class="btn btn-info">20.000Ar/kg</a>
+                <span class="badge badge-success">Certifié consomable</span>
               </div>
             </div>
           </div>
@@ -166,7 +190,8 @@
                   dans la préparation de nombreux produits alimentaires, tels
                   que les pains, les biscuits, les gâteaux et les purées
                 </p>
-                <a href="#" class="btn btn-primary">18.000Ar/Kg</a>
+                <a href="#prod" class="btn btn-info">18.000Ar/Kg</a>
+                <span class="badge badge-success">Certifié consomable</span>
               </div>
             </div>
           </div>
@@ -185,7 +210,8 @@
                   de nombreux produits alimentaires, tels que les nouilles, les
                   pains, les gâteaux et les galettes
                 </p>
-                <a href="#" class="btn btn-primary">14.000Ar/Kg</a>
+                <a href="#prod" class="btn btn-info">14.000Ar/Kg</a>
+                <span class="badge badge-success">Certifié consomable</span>
               </div>
             </div>
           </div>
@@ -212,8 +238,8 @@
         /></a>
       </div>
 
-      <p style="padding: 0">© 2025 Copyright Taramasoandro</p>
+      <p style="padding: 0">© 2025 Copyright Taramasoandro <br>+261 34 98 731 59</p>
+      
     </footer>
   </body>
 </html>
-
