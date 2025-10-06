@@ -2,7 +2,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fafafa;
+  color: #333;
+}
+
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+footer {
+  background-color: #023e8a;
+  color: white;
+}
+footer .icons {
+  transition: transform 0.3s ease;
+}
+footer .icons:hover {
+  transform: scale(1.2);
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+  .logoTaramasoandro {
+    height: 60px;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width:700px){
     .background-image {
     background-image: url("img/bg-image.jpg");
