@@ -56,19 +56,15 @@ footer .icons:hover {
 }
 
 @media (max-width:700px){
-    .background-image {
-    background-image: url("img/bg-image.jpg");
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    .carousel{
+      padding-top: 70px;
+    }
+   
     .card-wrapper{
         display: flex;
     }
     .card-img-top{
         width: 100px;
-
     }
     footer{
         height: 100px;
@@ -94,13 +90,7 @@ footer .icons:hover {
     
 }
 @media(min-width:701px){
-    .background-image {
-    background-image: url("img/bg-image.jpg");
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+     
     .card-wrapper{
         display: flex;
         justify-content: center;
@@ -123,3 +113,4 @@ footer .icons:hover {
         padding-top: 40px;
     }
 }
+
