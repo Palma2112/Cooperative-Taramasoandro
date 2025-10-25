@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="../dist/css/bootstrap.css" />
+    <script src="../dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../jquery.js" defer></script>
+    <script src="../dist/js/bootstrap.js" defer></script>
+    <link rel="stylesheet" href="recette.css" />
+    <title>Recette pour bébé</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Transition fluide */
+      .ingredients ul,
+      .prepar,
+      .bienfaits ul {
+        transition: opacity 0.3s ease;
+      }
+    </style>
+  </head>
+
+  <body class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="recette.html"
+          style="font-family: 'Playwrite DE SAS, cursive'; font-size: 25px"
+          >Recettes</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="recette.html">Pour bébé</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sport.html">Sportifs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gouter.html">Goûters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Retourner à l'accueil</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section dropdown -->
+    <section class="row container">
+      <h3 class="col-sm-12 col-lg-4">Types de farine</h3>
+
+      <div class="btn-group col-sm-12 col-lg-8">
+        <button
+          id="dropdownMenuButton"
+          type="button"
+          class="btn btn-success dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Farine de Manioc
+        </button>
+
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#" class="dropdown-item" data-type="maïs"
+              >Farine de maïs</a
+            >
+          </li>
+          <li>
+            <a href="#" class="dropdown-item" data-type="riz">Farine de riz</a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-item" data-type="sorgho"
+              >Farine de sorgho</a
+            >
+          </li>
+          <li>
+            <a href="#" class="dropdown-item" data-type="banane"
+              >Farine de banane</a
+            >
+          </li>
+          <li>
+            <a href="#" class="dropdown-item" data-type="patate douce"
+              >Farine de patate douce à chair orange</a
+            >
+          </li>
+          <li>
+            <a href="#" class="dropdown-item" data-type="manioc"
+              >Farine de manioc</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ingrédients -->
+    <main class="row">
+      <div class="container ingredients mt-5 col-sm-12 col-lg-6">
+        <p
+          style="
+            font-family: 'Comic Sans MS';
+            font-size: 20px;
+            font-weight: bold;
+          "
+        >
+          🧂 Ingrédients :
+        </p>
+        <ul style="text-align: center">
+          <li>2 c. à soupe de farine de manioc</li>
+          <li>100 ml d’eau tiède</li>
+          <li>1 c. à café de purée de banane</li>
+          <li>Quelques gouttes de lait maternel ou infantile</li>
+        </ul>
+      </div>
+
+      <!-- Préparation -->
+      <div class="container preparation mt-5 col-sm-12 col-lg-6">
+        <p
+          style="
+            font-family: 'Comic Sans MS';
+            font-size: 20px;
+            font-weight: bold;
+          "
+        >
+          🥣 Préparation :
+        </p>
+        <ol style="text-align: center" class="prepar">
+          <li>
+            <div class="orderlist">1</div>
+            Dans une petite casserole, verse la farine de manioc et l’eau.
+          </li>
+          <li>
+            <div class="orderlist">2</div>
+            Fais chauffer à feu doux en remuant constamment.
+          </li>
+          <li>
+            <div class="orderlist">3</div>
+            Lorsque le mélange épaissit, ajoute la purée de banane.
+          </li>
+          <li>
+            <div class="orderlist">4</div>
+            Laisse tiédir, puis incorpore un peu de lait pour adoucir la
+            texture.
+          </li>
+        </ol>
+      </div>
+    </main>
+
+    <!-- Bienfaits -->
+    <main class="bienfaits mt-5">
+      <p
+        style="font-family: 'Comic Sans MS'; font-size: 20px; font-weight: bold"
+      >
+        ✅ Bienfaits
+      </p>
+      <div class="container">
+        <ul>
+          <li>Excellente source d’énergie pour les bébés.</li>
+          <li>Facile à digérer et sans gluten.</li>
+          <li>Source de vitamines et minéraux essentiels.</li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- === SCRIPT FINAL INTÉGRÉ === -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const dropdownItems = document.querySelectorAll(".dropdown-item");
+        const dropdownButton = document.getElementById("dropdownMenuButton");
+        const ingredientList = document.querySelector(".ingredients ul");
+        const preparationList = document.querySelector(".prepar");
+        const bienfaitsList = document.querySelector(".bienfaits ul");
+
+        const recettes = {
+          manioc: {
+            ingredients: [
+              "2 c. à soupe de farine de manioc",
+              "100 ml d’eau tiède",
+              "1 c. à café de purée de banane",
+              "Quelques gouttes de lait maternel ou infantile",
+            ],
+            preparation: [
+              "Dans une petite casserole, verse la farine de manioc et l’eau.",
+              "Fais chauffer à feu doux en remuant constamment.",
+              "Lorsque le mélange épaissit, ajoute la purée de banane.",
+              "Laisse tiédir, puis incorpore un peu de lait pour adoucir la texture.",
+            ],
+            bienfaits: [
+              "Riche en énergie lente et facile à digérer.",
+              "Sans gluten, douce pour les bébés.",
+              "Source de calcium et potassium essentiels.",
+            ],
+          },
+          maïs: {
+            ingredients: [
+              "2 c. à soupe de farine de maïs",
+              "120 ml d’eau",
+              "1 c. à café de miel (facultatif)",
+            ],
+            preparation: [
+              "Mélange la farine de maïs et l’eau dans une petite casserole.",
+              "Fais chauffer à feu doux en remuant jusqu’à épaississement.",
+              "Ajoute le miel pour une touche sucrée naturelle.",
+            ],
+            bienfaits: [
+              "Source d’énergie lente et de fibres.",
+              "Bonne digestibilité, riche en antioxydants.",
+              "Idéale pour l’endurance des sportifs.",
+            ],
+          },
+          riz: {
+            ingredients: [
+              "2 c. à soupe de farine de riz complet",
+              "100 ml d’eau",
+              "1 c. à café de compote de pomme",
+            ],
+            preparation: [
+              "Mets la farine de riz et l’eau dans une casserole.",
+              "Fais chauffer doucement en mélangeant.",
+              "Ajoute la compote pour une texture douce.",
+            ],
+            bienfaits: [
+              "Facile à digérer",
+              "Source de fer et vitamines B",
+              "Renforce les os et muscles.",
+            ],
+          },
+          sorgho: {
+            ingredients: [
+              "2 c. à soupe de farine de sorgho",
+              "100 ml d’eau",
+              "1/2 banane écrasée",
+            ],
+            preparation: [
+              "Dissous la farine de sorgho dans l’eau froide.",
+              "Fais cuire à feu doux jusqu’à épaississement.",
+              "Ajoute la banane et mélange bien.",
+            ],
+            bienfaits: [
+              "Riche en protéines",
+              "Source de fer et antioxydants",
+              "Sans gluten, très nutritive.",
+            ],
+          },
+          banane: {
+            ingredients: [
+              "2 c. à soupe de farine de banane",
+              "80 ml de lait infantile",
+              "Quelques gouttes de vanille",
+            ],
+            preparation: [
+              "Verse la farine et le lait dans une petite casserole.",
+              "Fais chauffer à feu doux en remuant.",
+              "Ajoute la vanille puis laisse tiédir avant de servir.",
+            ],
+            bienfaits: [
+              "Riche en potassium",
+              "Renforce l’immunité",
+              "Douce et naturellement sucrée.",
+            ],
+          },
+          patate: {
+            ingredients: [
+              "2 c. à soupe de farine de patate douce",
+              "100 ml d’eau tiède",
+              "1 c. à café de purée de fruits",
+            ],
+            preparation: [
+              "Mélange la farine et l’eau dans une casserole.",
+              "Fais cuire doucement jusqu’à épaississement.",
+              "Ajoute la purée de fruits et remue bien.",
+            ],
+            bienfaits: [
+              "Riche en vitamine A",
+              "Améliore la vision",
+              "Très digeste pour les bébés.",
+            ],
+          },
+        };
+
+        function afficherRecette(type) {
+          const recette = recettes[type];
+          if (!recette) return;
+
+          ingredientList.style.opacity = 0;
+          preparationList.style.opacity = 0;
+          bienfaitsList.style.opacity = 0;
+
+          setTimeout(() => {
+            dropdownButton.textContent = "Farine de " + capitalize(type);
+            ingredientList.innerHTML = recette.ingredients
+              .map((i) => `<li>${i}</li>`)
+              .join("");
+            preparationList.innerHTML = recette.preparation
+              .map(
+                (p, i) => `<li><div class="orderlist">${i + 1}</div> ${p}</li>`
+              )
+              .join("");
+            bienfaitsList.innerHTML = recette.bienfaits
+              .map((b) => `<li>${b}</li>`)
+              .join("");
+            ingredientList.style.opacity = 1;
+            preparationList.style.opacity = 1;
+            bienfaitsList.style.opacity = 1;
+          }, 200);
+        }
+
+        function capitalize(s) {
+          return s.charAt(0).toUpperCase() + s.slice(1);
+        }
+
+        dropdownItems.forEach((item) => {
+          item.addEventListener("click", (e) => {
+            e.preventDefault();
+            const type = item.dataset.type;
+            afficherRecette(type);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

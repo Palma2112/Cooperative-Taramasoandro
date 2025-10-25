@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="../dist/css/bootstrap.css" />
+    <script src="../dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../jquery.js" defer></script>
+    <script src="../dist/js/bootstrap.js" defer></script>
+    <link rel="stylesheet" href="recette.css" />
+    <title>Recette pour sportifs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Transition fluide */
+      .ingredients ul,
+      .prepar,
+      .bienfaits ul {
+        transition: opacity 0.3s ease;
+      }
+    </style>
+  </head>
+
+  <body class="container">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="font-family: 'Monotype Corsiva'; font-size: 25px"
+          >Recettes</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="recette.html">Pour bébé</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="sport.html">Sportifs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gouter.html">Goûters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Retourner à l'accueil</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section dropdown -->
+    <section class="row container">
+      <h3 class="col-sm-12 col-lg-4">Types de farine</h3>
+
+      <div class="btn-group col-sm-12 col-lg-8">
+        <button
+          id="dropdownMenuButton"
+          type="button"
+          class="btn btn-success dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Farine de Manioc
+        </button>
+
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#" class="dropdown-item" data-type="mais"
+              >Farine de maïs</a
+            >
+          </li>
+          <li>
+            <a href="#" class="dropdown-item" data-type="riz">Farine de riz</a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-item" data-type="sorgho"
+              >Farine de sorgho</a
+            >
+          </li>
+          <li>
+            <a href="#" class="dropdown-item" data-type="banane"
+              >Farine de banane</a
+            >
+          </li>
+          <li>
+            <a href="#" class="dropdown-item" data-type="patate"
+              >Farine de patate douce à chair orange</a
+            >
+          </li>
+          <li>
+            <a href="#" class="dropdown-item" data-type="manioc"
+              >Farine de manioc</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ingrédients -->
+    <main class="row">
+      <div class="container ingredients mt-5 col-sm-12 col-lg-6">
+        <p
+          style="
+            font-family: 'Comic Sans MS';
+            font-size: 20px;
+            font-weight: bold;
+          "
+        >
+          🧂 Ingrédients :
+        </p>
+        <ul style="text-align: center">
+          <li>2 c. à soupe de farine de manioc</li>
+          <li>100 ml d’eau tiède</li>
+          <li>1 c. à café de purée de banane</li>
+          <li>Quelques gouttes de lait maternel ou infantile</li>
+        </ul>
+      </div>
+
+      <!-- Préparation -->
+      <div class="container preparation mt-5 col-sm-12 col-lg-6">
+        <p
+          style="
+            font-family: 'Comic Sans MS';
+            font-size: 20px;
+            font-weight: bold;
+          "
+        >
+          🥣 Préparation :
+        </p>
+        <ol style="text-align: center" class="prepar">
+          <li>
+            <div class="orderlist">1</div>
+            Dans une petite casserole, verse la farine de manioc et l’eau.
+          </li>
+          <li>
+            <div class="orderlist">2</div>
+            Fais chauffer à feu doux en remuant constamment.
+          </li>
+          <li>
+            <div class="orderlist">3</div>
+            Lorsque le mélange épaissit, ajoute la purée de banane.
+          </li>
+          <li>
+            <div class="orderlist">4</div>
+            Laisse tiédir, puis incorpore un peu de lait pour adoucir la
+            texture.
+          </li>
+        </ol>
+      </div>
+    </main>
+
+    <!-- Bienfaits -->
+    <main class="bienfaits mt-5">
+      <p
+        style="font-family: 'Comic Sans MS'; font-size: 20px; font-weight: bold"
+      >
+        ✅ Bienfaits
+      </p>
+      <div class="container">
+        <ul>
+          <li>Excellente source d’énergie pour les bébés.</li>
+          <li>Facile à digérer et sans gluten.</li>
+          <li>Source de vitamines et minéraux essentiels.</li>
+        </ul>
+      </div>
+    </main>
+
+    <script>
+      // --- Données des recettes pour sportifs ---
+      const recettes = {
+        manioc: {
+          ingredients: [
+            "3 c. à soupe de farine de manioc",
+            "200 ml de lait végétal ou d’eau",
+            "1 c. à soupe de miel",
+            "1 banane écrasée",
+          ],
+          preparation: [
+            "Dans une casserole, mélange la farine et le liquide choisi.",
+            "Fais chauffer à feu doux tout en remuant pour éviter les grumeaux.",
+            "Ajoute la banane écrasée et le miel.",
+            "Laisse épaissir puis sers tiède avant ou après l’entraînement.",
+          ],
+          bienfaits: [
+            "Source d’énergie lente, idéale pour les efforts de longue durée.",
+            "Sans gluten et très digeste.",
+            "Favorise la récupération musculaire grâce à ses glucides naturels.",
+            "Riche en potassium, bénéfique pour le système nerveux et musculaire.",
+          ],
+        },
+
+        mais: {
+          ingredients: [
+            "2 c. à soupe de farine de maïs",
+            "250 ml de lait ou boisson végétale",
+            "1 c. à café de cacao en poudre",
+            "1 c. à soupe de sirop d’érable",
+          ],
+          preparation: [
+            "Mélange la farine de maïs et le cacao dans une casserole.",
+            "Verse le lait et chauffe doucement en remuant.",
+            "Quand le mélange épaissit, ajoute le sirop d’érable.",
+            "Sers chaud comme boisson énergétique.",
+          ],
+          bienfaits: [
+            "Riche en glucides complexes pour recharger le glycogène musculaire.",
+            "Bonne source de magnésium et antioxydants.",
+            "Favorise la performance et la récupération post-entraînement.",
+          ],
+        },
+
+        riz: {
+          ingredients: [
+            "3 c. à soupe de farine de riz complet",
+            "200 ml d’eau ou lait d’amande",
+            "1 c. à café de miel ou de datte mixée",
+            "1 pincée de cannelle",
+          ],
+          preparation: [
+            "Mélange la farine, le liquide et la cannelle.",
+            "Fais chauffer jusqu’à obtenir une texture de crème.",
+            "Ajoute le miel ou la datte pour sucrer naturellement.",
+          ],
+          bienfaits: [
+            "Apport énergétique rapide et digeste.",
+            "Source de fer et vitamines du groupe B.",
+            "Parfait pour les repas pré-entraînement ou petit-déjeuner sportif.",
+          ],
+        },
+
+        sorgho: {
+          ingredients: [
+            "3 c. à soupe de farine de sorgho",
+            "200 ml d’eau",
+            "1 c. à café de poudre de cacao",
+            "1 c. à café de miel",
+          ],
+          preparation: [
+            "Mélange la farine et l’eau, puis fais chauffer à feu doux.",
+            "Ajoute le cacao et le miel une fois la texture épaisse.",
+            "Déguste tiède pour un apport énergétique complet.",
+          ],
+          bienfaits: [
+            "Riche en protéines végétales et fibres.",
+            "Contribue à la construction musculaire et à la satiété.",
+            "Source naturelle de fer et d’antioxydants.",
+          ],
+        },
+
+        banane: {
+          ingredients: [
+            "2 c. à soupe de farine de banane",
+            "250 ml de lait végétal",
+            "1 c. à café de beurre de cacahuète",
+            "1 c. à café de miel",
+          ],
+          preparation: [
+            "Mélange tous les ingrédients dans une casserole.",
+            "Chauffe à feu doux jusqu’à épaississement.",
+            "Sers tiède comme collation post-entraînement.",
+          ],
+          bienfaits: [
+            "Riche en potassium et magnésium pour éviter les crampes.",
+            "Apporte des glucides rapides et des protéines végétales.",
+            "Aide à la récupération musculaire et nerveuse.",
+          ],
+        },
+
+        patate: {
+          ingredients: [
+            "3 c. à soupe de farine de patate douce à chair orange",
+            "200 ml de lait ou d’eau",
+            "1 c. à café de cacao pur",
+            "1 c. à soupe de miel ou sirop d’agave",
+          ],
+          preparation: [
+            "Dans une casserole, mélange la farine, le cacao et le liquide.",
+            "Fais chauffer à feu doux jusqu’à épaississement.",
+            "Ajoute le miel pour sucrer naturellement.",
+            "Déguste chaud pour recharger ton énergie.",
+          ],
+          bienfaits: [
+            "Riche en bêta-carotène et glucides à libération lente.",
+            "Favorise la récupération et le renforcement musculaire.",
+            "Source naturelle d’antioxydants et de vitamine A.",
+          ],
+        },
+      };
+
+      // --- Sélection des éléments HTML ---
+      document.addEventListener("DOMContentLoaded", () => {
+        const dropdownItems = document.querySelectorAll(".dropdown-item");
+        const dropdownButton = document.getElementById("dropdownMenuButton");
+        const ingredientList = document.querySelector(".ingredients ul");
+        const preparationList = document.querySelector(".prepar");
+        const bienfaitsList = document.querySelector(".bienfaits ul");
+        // --- Fonction d'affichage ---
+        function afficherRecette(type) {
+          const recette = recettes[type];
+          if (!recette) return;
+
+          ingredientList.style.opacity = 0;
+          preparationList.style.opacity = 0;
+          bienfaitsList.style.opacity = 0;
+
+          setTimeout(() => {
+            dropdownButton.textContent = "Farine de " + capitalize(type);
+            ingredientList.innerHTML = recette.ingredients
+              .map((i) => `<li>${i}</li>`)
+              .join("");
+            preparationList.innerHTML = recette.preparation
+              .map(
+                (p, i) => `<li><div class="orderlist">${i + 1}</div> ${p}</li>`
+              )
+              .join("");
+            bienfaitsList.innerHTML = recette.bienfaits
+              .map((b) => `<li>${b}</li>`)
+              .join("");
+            ingredientList.style.opacity = 1;
+            preparationList.style.opacity = 1;
+            bienfaitsList.style.opacity = 1;
+          }, 200);
+        }
+
+        function capitalize(s) {
+          return s.charAt(0).toUpperCase() + s.slice(1);
+        }
+
+        dropdownItems.forEach((item) => {
+          item.addEventListener("click", (e) => {
+            e.preventDefault();
+            const type = item.dataset.type;
+            afficherRecette(type);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
