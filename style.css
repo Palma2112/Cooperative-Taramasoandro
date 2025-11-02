@@ -94,7 +94,7 @@ footer .icons:hover {
 
 @media (max-width:700px){
     .carousel{
-      padding-top: 70px;
+      padding-top: 100px;
     }
     .card-wrapper{
         display: flex;
@@ -168,3 +168,4 @@ footer .icons:hover {
     width: 300px;
   }
 }
+
