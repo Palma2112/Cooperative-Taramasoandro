@@ -6,11 +6,13 @@
   font-family: 'Josefin Sans', sans-serif;
   scroll-behavior: smooth;
 }
+.smthng>p{
+  color: grey;
+}
 
 body {
   background-color: #fafafa;
   color: #333;
-  scroll-behavior: smooth;
 }
 .comander{
   text-decoration: none;
@@ -23,7 +25,10 @@ body {
 .navbar-brand img:hover {
   transform: scale(1.05);
 }
-
+.wrapper-img{
+  display: flex;
+  justify-content: start;
+}
 .card {
   border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -33,7 +38,35 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
+.ecoresponsable{
+  width: 100%;
+  height: auto;
+  background-color: #008a4042;
+  border: 1px solid rgba(0, 117, 0, 0.422);
+  border-radius: 20px;
+}
 
+.valeur{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.smthng{
+  width: 200px;
+  height: auto;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 20px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+.wrapper-valeur{
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
 footer {
   background-color: #023e8a;
   color: white;
@@ -43,6 +76,10 @@ footer .icons {
 }
 footer .icons:hover {
   transform: scale(1.2);
+}
+.worth{
+  height: 50px;
+  width: auto;
 }
 
 /* Responsivité */
@@ -87,6 +124,17 @@ footer .icons:hover {
         height: 70px;
         width: auto;
     }
+    .wrapper-valeur{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+        width:80%;
+}
+.smthng{
+    width: 300px;
+  }
     
 }
 @media(min-width:701px){
@@ -111,8 +159,12 @@ footer .icons:hover {
         text-align: center;
         padding-top: 40px;
     }
-
+    .wrapper-valeur{
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
-
-
-
+  .smthng{
+    width: 300px;
+  }
+}
