@@ -13,6 +13,7 @@
         background-position: center;
         height: auto;
         flex-direction: column;
+        padding-top: 60px;
 
     }
 body{
@@ -28,6 +29,9 @@ footer .icons {
 footer .icons:hover {
   transform: scale(1.2);
 }
+.logoTaramasoandro{
+    height: 70px;
+    margin-top: 20px;}
 
 
    @media(min-width:502px){
@@ -40,6 +44,9 @@ footer .icons:hover {
         background-position: center;
         flex-direction: column;
         width: 100%;
+    }
+    .logoTaramasoandro{
+        height: 0px;
     }
     
     
@@ -351,4 +358,3 @@ footer .icons:hover {
 
     }
 }
-
