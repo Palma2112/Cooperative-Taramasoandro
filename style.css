@@ -10,6 +10,12 @@
 .smthng>p{
   color: grey;
 }
+.badge{
+  background-color: #4cc488;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  
+}
 
 body {
   background: linear-gradient(45deg, #ffff, #fafafa);
