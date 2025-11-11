@@ -6,12 +6,13 @@
   font-family: 'Josefin Sans', sans-serif;
   scroll-behavior: smooth;
 }
+
 .smthng>p{
   color: grey;
 }
 
 body {
-  background-color: #fafafa;
+  background: linear-gradient(45deg, #ffff, #fafafa);
   color: #333;
 }
 .comander{
@@ -30,7 +31,7 @@ body {
   justify-content: start;
 }
 .card {
-  border: none;
+  border: 39px solid linear-gradient(to left, #ffff, grey) ;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
@@ -45,7 +46,9 @@ body {
   border: 1px solid rgba(0, 117, 0, 0.422);
   border-radius: 20px;
 }
-
+.card-title{
+  font-weight: bolder;
+}
 .valeur{
   width: 100%;
   display: flex;
@@ -81,6 +84,10 @@ footer .icons:hover {
   height: 50px;
   width: auto;
 }
+.btn{
+  color: rgb(3, 37, 231);
+}
+
 
 /* Responsivité */
 @media (max-width: 768px) {
@@ -94,7 +101,7 @@ footer .icons:hover {
 
 @media (max-width:700px){
     .carousel{
-      padding-top: 100px;
+      padding-top: 70px;
     }
     .card-wrapper{
         display: flex;
@@ -168,4 +175,3 @@ footer .icons:hover {
     width: 300px;
   }
 }
-
