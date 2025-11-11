@@ -46,7 +46,7 @@ footer .icons:hover {
         width: 100%;
     }
     .logoTaramasoandro{
-        height: 0px;
+        height: 70px;
     }
     
     
@@ -205,16 +205,17 @@ footer .icons:hover {
         background-position: center;
         height: 80vh;
         flex-direction: column;
-
+        
     }
     
     .image-container>h1{
         color: aliceblue;
         font-weight: bolder;
+        padding-top: 70px;
     }
     .image-container>p{
         color: rgb(227, 255, 233);
-        font-weight: bolder;   
+        font-weight: bolder;  
     }
     .img-wrapper-card{
         height: 200px;
@@ -358,3 +359,4 @@ footer .icons:hover {
 
     }
 }
+
