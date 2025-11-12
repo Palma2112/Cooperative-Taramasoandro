@@ -54,11 +54,13 @@ footer .icons:hover {
     .image-container>h1{
         color: aliceblue;
         font-weight: bolder;
+        font-size: 30px;
     }
     .image-container>p{
         color: rgb(227, 255, 233);
         font-weight: bolder;  
         padding-bottom: 90px; 
+        font-size: 20px;
     }
     .img-wrapper-card{
         height: 200px;
@@ -371,6 +373,7 @@ footer .icons:hover {
     padding: 10px;
     }
 }
+
 
 
 
