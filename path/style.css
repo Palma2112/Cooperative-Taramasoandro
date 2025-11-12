@@ -192,6 +192,12 @@ footer .icons:hover {
     background-color: #fff;
     max-width: max-content;
    }
+    .logoTaramasoandro{
+    height: 100px;
+    width: auto;
+    padding: 10px;
+        
+    }
 }
     @media (max-width:500px){
         *{
@@ -360,11 +366,12 @@ footer .icons:hover {
 
     }
     .logoTaramasoandro{
-    height: 100px;
+    height: 70px;
     width: auto;
     padding: 10px;
     }
 }
+
 
 
 
