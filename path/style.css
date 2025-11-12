@@ -30,9 +30,7 @@ footer .icons {
 footer .icons:hover {
   transform: scale(1.2);
 }
-.logoTaramasoandro{
-    height: 70px;
-    margin-top: 20px;}
+
 
 
    @media(min-width:502px){
@@ -373,6 +371,7 @@ footer .icons:hover {
     padding: 10px;
     }
 }
+
 
 
 
