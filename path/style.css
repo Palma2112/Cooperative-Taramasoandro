@@ -60,7 +60,6 @@ footer .icons:hover {
     .image-container>p{
         color: rgb(227, 255, 233);
         font-weight: bolder;  
-        padding-bottom: 90px; 
         font-size: 30px;
     }
     .img-wrapper-card{
@@ -374,6 +373,7 @@ footer .icons:hover {
     padding: 10px;
     }
 }
+
 
 
 
