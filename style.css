@@ -107,7 +107,7 @@ footer .icons:hover {
 
 @media (max-width:700px){
     .carousel{
-      padding-top: 90px;
+      padding-top: 100px;
     }
     .card-wrapper{
         display: flex;
@@ -144,12 +144,11 @@ footer .icons:hover {
         gap: 1em;
         align-items: center;
         width:80%;
-}
-.smthng{
-    width: 300px;
+    }
+    .smthng{
+        width: 300px;
+      }
   }
-    
-}
 @media(min-width:701px){
     .card-wrapper{
         display: flex;
@@ -181,6 +180,7 @@ footer .icons:hover {
     width: 300px;
   }
 }
+
 
 
 
