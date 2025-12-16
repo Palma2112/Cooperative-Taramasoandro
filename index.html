@@ -7,13 +7,16 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>Coopérative Taramasoandro</title>
-    <link rel="stylesheet" href="dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <meta name="google-site-verification" content="El7n61jCLmQlO62F1Is_IM62nXiMX4EoLFAcMv4ELyE" />
+    <meta
+      name="google-site-verification"
+      content="El7n61jCLmQlO62F1Is_IM62nXiMX4EoLFAcMv4ELyE"
+    />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="dist/js/jquery.js" defer></script>
-    <script src="dist/js/bootstrap.js" defer></script>
+    <script src="jquery.js" defer></script>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
     <meta
       name="description"
       content="Coopérative Taramasoandro – Farines naturelles et nutritives : maïs, banane, patate douce, riz, manioc, sorgho. Produits sains et locaux à Madagascar."
@@ -32,7 +35,7 @@
   <body>
     <div
       class="alert alert-warning alert-dismissible fade show"
-      style="margin: 0; z-index: 99; position: sticky; top: 0; "
+      style="margin: 0; z-index: 99; position: sticky; top: 0"
       role="alert"
     >
       <strong>Bienvenue !</strong>
@@ -45,80 +48,70 @@
         aria-label="Close"
       ></button>
     </div>
-
     <nav
-      class="navbar navbar-expand-lg navbar-light"
-      id="mainNavbar"
+      class="navbar navbar-expand-lg"
       style="
         position: fixed;
-        width: 100%;
+        backdrop-filter: blur(10px) brightness(60%);
         z-index: 99;
-        background: rgba(255, 255, 255, 0.944);
-        backdrop-filter: blur(10px);
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.938);
       "
     >
-      <nav class="navbar ml-3">
-        <a class="navbar-brand" href="#">
-          <img 
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
             src="img/taramasoandro.webp"
-            width="auto"
-            height="100"
             alt="logo"
+            style="height: 80px; width: auto"
             class="logoTaramasoandro"
-            loading="lazy"
-          />
-        </a>
-      </nav>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Accueil </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#prod">Production</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Contact
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a
-                class="dropdown-item"
-                href="https://www.facebook.com/profile.php?id=61580992426627"
-                target="_blank"
-                >Facebook</a
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Accueil</a
               >
-              <a class="dropdown-item" href="#">Instagram</a>
-              <a class="dropdown-item" href="#">Tiktok</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#prod">Productions</a>
+            </li>
+            <li class="nav-item dropdown">
               <a
-                class="dropdown-item"
-                href="mailto:coper.taramasoandro@gmail.com"
-                >Email</a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-            </div>
-          </li>
-        </ul>
+                Contacts
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.facebook.com/cooperativetaramasoandro"
+                    target="_blank"
+                    >Facebook</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Tiktok</a></li>
+                <li><a class="dropdown-item" href="#">Instagram</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -126,10 +119,9 @@
 
     <section>
       <div
-        id="carouselExampleSlidesOnly" 
+        id="carouselExampleSlidesOnly"
         class="carousel slide"
         data-bs-ride="carousel"
-
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -138,7 +130,6 @@
               class="d-block w-100 img-fluid"
               loading="lazy"
               alt="bg-image"
-              
             />
           </div>
           <div class="carousel-item">
@@ -510,30 +501,3 @@
     </script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
