@@ -2,4 +2,8 @@
   "dependencies": {
     "bootstrap": "^5.3.8"
   }
+  "scripts": {
+  "build": "vite build" // ou "next build", "react-scripts build", selon ton stack
+}
+
 }
